@@ -1,0 +1,142 @@
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* Buttons */
+button {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* User Form Styles */
+.user-form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add-btn {
+    margin-bottom: 20px;
+}
+
+/* User List Styles */
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.user-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.user-card h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.user-card p {
+    color: #333;
+    margin: 5px 0;
+}
+
+.user-card button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.user-card button.edit-btn {
+    background-color: #28a745;
+}
+
+.user-card button.delete-btn {
+    background-color: #dc3545;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+}
